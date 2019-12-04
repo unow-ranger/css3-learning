@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>边框圆角</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		.container>div{
+			width: 200px;
+			height: 120px;
+			background-color: skyblue;
+			margin: 20px;
+			padding-top: 80px;
+
+		}
+		.box1 {
+			border-radius: none;
+		}
+		.box2 {
+			border-radius: 20px;
+		}
+		.box3 {
+			border-radius: 20px 40px;
+		}
+		.box4 {
+			border-radius: 20px 40px 60px;
+		}
+		.box5 {
+			border-radius: 20px 40px 60px 80px;
+		}
+		.box6 {
+			border-top-left-radius: 40px 80px;
+		}
+		.box7 {
+			border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1">border-radius: none;</div>
+		<div class="box2">border-radius: 20px;</div>
+		<div class="box3">border-radius: 20px 40px;</div>
+		<div class="box4">border-radius: 20px 40px 60px;</div>
+		<div class="box5">border-radius: 20px 40px 60px 80px;</div>
+		<div class="box6">border-top-left-radius: 40px 80px;</div>
+		<div class="box7">border-radius: 100%;</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3 text-overflow 应用</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		
+		
+		.container {
+			width: 11em;
+			overflow: hidden;
+			background-color: #212121;
+			line-height: 64px;
+			margin: 100px;
+		}
+		
+		.hv-ellipsis {
+			text-decoration: none;
+			text-align: center;
+			display: inline-block;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			color: #fff;
+			transition: all 5s linear;
+		}
+		.hv-ellipsis:hover{
+			color: lightblue;
+			margin-left: -1300px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<a class="hv-ellipsis" href="#">
+			在现实认知观的基础上，对其描写成非常态性现象。
+			是文学体裁的一种，侧重于事件发展过程的描述。
+			强调情节的生动性和连贯性，较适于口头讲述。已经发生事。
+		</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计数器</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		.chapter {
+			counter-reset: section 0;
+		}
+		.chapter>li::before {
+			content: "第"counter(section)"章-";
+			counter-increment: section 1;
+
+		}
+	</style>
+</head>
+<body>
+	<ul class="chapter">
+		<li>故事情节</li>
+		<li>故事情节</li>
+		<li>故事情节</li>
+		<li>故事情节</li>
+		<li>故事情节</li>
+		<li>故事情节</li>
+	</ul>
+</body>
+</html>

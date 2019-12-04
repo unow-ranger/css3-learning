@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>盒子阴影-应用</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		.container {
+			width: 960px;
+			margin: 40px auto;
+			font-size: 20px;
+		}
+		.box-hv {
+			transition: all .6s;
+		}
+		.box-hv.left-right-open:hover {
+			box-shadow: inset 0 0 0 0 rgb(0,0,0,.5),inset 0 0 0 0 rgb(0,0,0,.5);
+		}
+		.test {
+			width: 671px;
+			height: 607px;
+			box-shadow: inset 335px 0 0 0 rgb(0,0,0,.5),inset -336px 0 0 0 rgb(0,0,0,.5);
+			background-image: url('./demo-0.png');
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box-hv left-right-open test"></div>
+	</div>
+</body>
+</html>

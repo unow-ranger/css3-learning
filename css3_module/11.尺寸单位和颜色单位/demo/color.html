@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>颜色单位</title>
+	<style type="text/css">
+		.keyword {
+			color:deeppink;
+		}
+		.hex {
+			color:#ff0000;
+		}
+		.rgb{
+			color:rgb(123,23,12);
+		}
+		.rgba{
+			color:rgba(250,0,0,.2);
+		}
+		.rgb-p{
+			color:rgb(150%,0%,0%);
+		}
+		.rgba-p{
+			color:rgba(150%,0%,0%,.2);
+		}
+		.transparent{
+			border: 1px solid deeppink;
+			border-top: transparent;
+		}
+		.currentColor{
+			color: red;
+			margin: 2px;
+		}
+		.currentColor span{
+			border: 2px solid currentColor;
+		}
+		.hsl{
+			color: hsl(171,0.66%,0.56%);
+		}
+		.hsla{
+			color: hsl(171,0.66%,0.56%,.5);
+		}
+		.container>div{
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			background-color: deeppink;
+		}
+		div.opacity100{
+			opacity: 1; 
+		}
+		div.opacity90{
+			opacity: .9; 
+		}
+		div.opacity80{
+			opacity: .8; 
+		}
+		div.opacity70{
+			opacity: .7; 
+		}
+		div.opacity60{
+			opacity: .6; 
+		}
+		div.opacity50{
+			opacity: .5; 
+		}
+		div.opacity40{
+			opacity: .4; 
+		}
+		div.opacity30{
+			opacity: .3; 
+		}
+		div.opacity20{
+			opacity: .2; 
+		}
+		div.opacity10{
+			opacity: .1; 
+		}
+	</style>
+</head>
+<body>
+	<h1>颜色单位</h1>
+	<p class="keyword">关键字</p>
+	<hr/>
+	<p class="hex">十六进制</p>
+	<hr/>
+	<p class="rgb">RGB</p>
+	<hr/>
+	<p class="rgba">RGB 透明色</p>
+	<hr/>
+	<p class="rgb-p">RGB|百分比</p>
+	<hr/>
+	<p class="rgba-p">RGB 透明色|百分比</p>
+	<hr/>
+	<p class="hsl">hsl 工业级颜色</p>
+	<hr/>
+	<p class="hsla">hsla 工业级颜色-透明色</p>
+	<hr/>
+	<p class="transparent">border-top透明</p>
+	<p class="currentColor">使用当前父元素的元素<span>currentColor</span></p>
+	<h1>opacity</h1>
+	<div class="container">
+		<div class="opacity100">opacity100</div>
+		<div class="opacity90">opacity90</div>
+		<div class="opacity80">opacity80</div>
+		<div class="opacity70">opacity70</div>
+		<div class="opacity60">opacity60</div>
+		<div class="opacity50">opacity50</div>
+		<div class="opacity40">opacity40</div>
+		<div class="opacity30">opacity30</div>
+		<div class="opacity20">opacity20</div>
+		<div class="opacity10">opacity10</div>
+	</div>
+</body>
+</html>

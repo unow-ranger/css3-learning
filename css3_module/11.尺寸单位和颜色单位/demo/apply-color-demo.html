@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>商品遮罩层效果</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		.product{
+			width: 671px;
+			height: 608px;
+			margin:50px auto;
+			position: relative;
+		}
+		.product>img{
+			width: 100%;
+			height: 100%;
+		}
+		.product:hover::before{
+			content: "经典美女";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: hsla(0,0%,10%,.8);
+			color: #fff;
+			font-size: 2em;
+			line-height: 500px;
+			text-align: center;
+			font-size: bold;
+			border: 2px solid deeppink;
+		} 
+	</style>
+</head>
+<body>
+	<div class="product">
+		<img src="./demo-0.png" alt=""/>
+	</div>
+</body>
+</html>

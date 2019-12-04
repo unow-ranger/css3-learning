@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background-position</title>
+	<style type="text/css">
+		div{
+			color: white;
+			float: left;
+			width: 400px;
+			height: 400px;
+			margin: 10px;
+			border: 1px solid deeppink;
+			background-image: url(./bg-s.png);
+			background-repeat: no-repeat;
+		}
+		.center{
+			background-position: 50% 50%;
+		}
+		.right-bottom{
+			background-position: right bottom;
+		}
+		.right{
+			background-position: right;
+		}
+		.left{
+			background-position: left;
+		}
+		.top{
+			background-position: top;
+		}
+		.bottom{
+			background-position: bottom;
+		}
+		.custom{
+			background-position: right 20px bottom 20px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div class="center"></div>
+	<div class="right-bottom"></div>
+	<div class="left"></div>
+	<div class="right"></div>
+	<div class="top"></div>
+	<div class="bottom"></div>
+	<div class="custom"></div>
+</body>
+</html>

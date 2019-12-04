@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>checked选择器</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		input[type="checkbox"]:checked{
+			width: 20px;
+			height: 20px;
+
+		}
+		input[type="checkbox"]:checked+label{
+			text-decoration: line-through;
+		}
+		input[type="checkbox"]:checked::after{
+			padding-left: 6em; 
+			content: "ok!";
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<h1> to do list</h1>
+	<input type="checkbox" name="todo[]" id="todo1" checked>
+	<label for="todo1">吃饭</label>
+	<br>
+	<input type="checkbox" name="todo[]" id="todo2">
+	<label for="todo2">睡觉</label>
+	<br>
+	<input type="checkbox" name="todo[]" id="todo3">
+	<label for="todo3">上学</label>
+	<br>
+	<input type="checkbox" name="todo[]" id="todo4">
+	<label for="todo4">作业</label>
+	<br>
+</body>
+</html>

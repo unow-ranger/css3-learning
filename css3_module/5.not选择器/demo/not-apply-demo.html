@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>not 应用实战</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		.imgs img {
+			width: 220px;
+			height: 220px;
+		}
+		.imgs>li{
+			float: left;
+			margin-left: 5px;
+		}
+		.imgs {
+			width: 675px;
+			margin: 20px auto;
+		}
+		/* 饱和度效果*/
+		.imgs:hover li:not(:hover) {
+			opacity: .3;
+			filter: alpha(opacity=30);
+		}
+		/* 模糊效果 */
+		/*.imgs:hover li:not(:hover) {
+			filter: blur(3px);
+		}*/
+	</style>
+</head>
+<body>
+	<ul class="imgs clearfix">
+		<li><img src="demo-0.png" alt=""></li>
+		<li><img src="demo-0.png" alt=""></li>
+		<li><img src="demo-0.png" alt=""></li>
+		<li><img src="demo-0.png" alt=""></li>
+		<li><img src="demo-0.png" alt=""></li>
+		<li><img src="demo-0.png" alt=""></li>
+	</ul>
+</body>
+</html>

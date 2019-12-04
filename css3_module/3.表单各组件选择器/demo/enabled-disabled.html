@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>选项卡</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style>
+		input[type="checkbox"]:enabled+label {
+			color: #096;
+		}
+		input[type="checkbox"]:disabled+label {
+			text-decoration: line-through;
+			cursor: not-allowed;
+
+			color: grey;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<input type="checkbox" name="test[]" id="checkbox-1" disabled>
+		<label for="checkbox-1" > disabled</label>
+		<input type="checkbox" name="test[]" id="checkbox-2">
+		<label for="checkbox-2" > enabled</label>
+	</form>
+</body>
+</html>

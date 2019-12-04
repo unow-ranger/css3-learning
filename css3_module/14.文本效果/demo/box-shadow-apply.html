@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>text-shadow 实践</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		body {
+			background-color: #f5f5f5;
+			color: #555;
+			text-align: center;
+			font-size: 2em;
+			font-family: 'Helvetica Neue',Helevetica,Arical;
+		}
+		
+		.text {
+			font-weight: 900;
+			margin: 40px 0;
+		}
+		.text.hv-fire {
+			background-color: #000;
+			height: 300px;
+			color: #fff;
+			font-size: 100px;
+			line-height: 300px;
+			text-align: center;
+			transition: all .6s;
+		}
+		.text.hv-fire:hover {
+			text-shadow: 0 0 5px #fff,
+						 0 0 20px #fefcc9,
+						 10px -10px 30px #feec85,
+						 -20px -20px 40px #ffae34,
+						 20px -40px 50px #ec760c,
+						 -20px -60px 60px #cd4606,
+						 0 -80px 70px #973716,
+						 10px -90px 80px #451b0e;
+		}
+		.text.magic {
+			height: 300px;
+			background-color: #000;
+			color: #fff;
+			font-size: 100px;
+			line-height: 300px;
+			text-align: center;
+			text-shadow: 0 0 10px #fff,
+						 0 0 20px #fff,
+						 0 0 30px #fff,
+						 0 0 40px #ff00de,
+						 0 0 50px #ff00de,
+						 0 0 60px #ff00de,
+						 0 0 70px #ff00de,
+						 0 0 80px #ff00de,
+						 0 0 90px #ff00de;
+
+		}
+
+		.text.three-d {
+			margin-top: 10%;
+			letter-spacing: -3px;
+			text-align: center;
+			text-shadow: 0 1px 0 hsl(174, 5%, 80%),
+						 0 2px 0 hsl(174, 5%, 75%),
+						 0 3px 0 hsl(174, 5%, 70%),
+						 0 4px 0 hsl(174, 5%, 65%),
+						 0 5px 0 hsl(174, 5%, 64%),
+						 0 6px 0 hsl(174, 5%, 63%),
+						 0 7px 0 hsl(174, 5%, 62%),
+						 0 8px 0 hsl(174, 5%, 61%),
+						 0 9px 0 hsl(174, 5%, 60%);
+		}
+
+	</style>
+</head>
+<body>
+	<h2 class="text hv-fire">Mr King</h2>
+	<h2 class="text magic">MAGIC</h2>
+</body>
+</html>

@@ -8,7 +8,7 @@
 - [4.child和type选择器](css3_module/4.child和type选择器/child-type-select.md)
 - [5.not选择器](css3_module/5.not选择器/not-select.md)
 - [6.first-letter和first-line伪元素](css3_module/6.first-letter和first-line伪元素/letter-line.md)
-- [7. before和after伪元素](css3_module/7. before和after伪元素/before-after.md)
+- [7.before和after伪元素](css3_module/7.before和after伪元素/before-after.md)
 - [8.计算器](css3_module/8.计算器/counter.md)
 - [9.属性选择器](css3_module/9.属性选择器/attribute-selector.md)
 - [10.选择器兼容性及优先级](css3_module/10.选择器兼容性及优先级/compatible-selectors.md)

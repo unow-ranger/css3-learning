@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background-attachment</title>
+	<style type="text/css">
+		div {
+			color: deeppink;
+			height: 300px;
+			width: 600px;
+			margin: 10px auto;
+			background-image: url(./bg-s.png);
+			overflow-x: hidden;
+			overflow-y: scroll;
+		}
+		.scroll {
+			background-attachment: scroll;
+		}
+		.fixed{
+			background-attachment: fixed;
+		}
+		.local{
+			background-attachment: local;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="scroll">
+		<p>scroll</p>
+		<p>scroll</p>
+		<p>scroll</p>
+		<p>scroll</p>
+		<p>scroll</p>
+		<p>scroll</p>
+		<p>scroll</p>
+		<p>scroll</p>
+		<p>scroll</p>
+	</div>
+	<div class="fixed">
+		<p>fixed</p>
+		<p>fixed</p>
+		<p>fixed</p>
+		<p>fixed</p>
+		<p>fixed</p>
+		<p>fixed</p>
+		<p>fixed</p>
+		<p>fixed</p>
+		<p>fixed</p>
+		<p>fixed</p>
+	</div>
+	<div class="local"> 
+		<p>local</p>
+		<p>local</p>
+		<p>local</p>
+		<p>local</p>
+		<p>local</p>
+		<p>local</p>
+		<p>local</p>
+		<p>local</p>
+		<p>local</p>
+		<p>local</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background-repeat</title>
+	<style type="text/css">
+		div{
+			color: white;
+			float: left;
+			width: 300px;
+			height: 300px;
+			margin: 10px;
+			border: 1px solid deeppink;
+			background-image: url(./bg-s.png);
+		}
+		.no-repeat{
+			background-repeat: no-repeat;
+		}
+		.repeat-x{
+			background-repeat: repeat-x;
+		}
+		.repeat-y{
+			background-repeat: repeat-y;
+		}
+		.space{
+			width: 600px;
+			height: 600px;
+			background-repeat: space;
+		}
+		.round{
+			width: 600px;
+			height: 600px;
+			background-repeat: round;
+		}
+
+	</style>
+</head>
+<body>
+	<div >default</div>
+	<div class="no-repeat">no-repeat</div>
+	<div class="repeat-x">repeat-x</div>
+	<div class="repeat-y">repeat-y</div>
+	<div class="space">space</div>
+	<div class="round">round</div>
+</body>
+</html>

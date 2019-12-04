@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>盒子阴影</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		.container>div{
+			width: 200px;
+			height: 120px;
+			background-color: skyblue;
+			margin: 20px;
+			padding-top: 80px;
+		}
+		.box1{
+			box-shadow: none;
+		}
+		.box2{
+			box-shadow: 0 10px pink;
+		}
+		.box3{
+			box-shadow: 10px 0 pink;
+		}
+		.box4{
+			box-shadow: 10px 10px pink;
+		}
+		.box5{
+			box-shadow: 10px 10px rgb(0,0,0,.5);
+		}
+		.box6{
+			box-shadow: 10px 10px 5px rgb(0,0,0,.5);
+		}
+		.box7{
+			box-shadow: 7px 7px 10px 5px #d640d6;
+		}
+		.box8{
+			box-shadow: inset 7px 7px 10px 5px #d640d6;
+		}
+		.box9{
+			box-shadow: 10px 10px pink,-10px -10px rgb(0,0,0,.5);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1">box-shadow: none;</div>
+		<div class="box2">box-shadow: 0 10px pink;</div>
+		<div class="box3">box-shadow: 10px 0 pink;</div>
+		<div class="box4">box-shadow: 10px 10px pink;</div>
+		<div class="box5">box-shadow: 10px 10px rgb(0,0,0,.5);</div>
+		<div class="box6">box-shadow: 10px 10px 5px rgb(0,0,0,.5);</div>
+		<div class="box7">box-shadow: 7px 7px 10px 5px #d640d6;</div>
+		<div class="box8">box-shadow: insert 7px 7px 10px 5px #d640d6;</div>
+		<div class="box9">box-shadow: 10px 10px pink,10px 10px rgb(0,0,0,.5);</div>
+
+	</div>
+</body>
+</html>

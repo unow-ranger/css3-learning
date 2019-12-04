@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>尺寸单位</title>
+	<style type="text/css">
+		.default{
+			font-size: 16px;
+		}
+		.percent{
+			font-size: 200%;
+		}
+
+		.parent-em {
+			font-size:40px;
+		}
+		.parent-em>span{
+			font-size: 2em;
+		}
+		.parent-rem {
+			font-size: 40px;
+		}
+		.parent-rem>span{
+			font-size: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<h1>尺寸单位</h1>
+	<span style="color:red;">默认</span>
+	<p>hello world</p>
+	<p class="default">
+		this is browser default-size
+	</p>
+	<hr/>
+	<span style="color:red;">%</span>
+	<p class="percent">
+		this is browser percent-size
+	</p>
+
+	<hr/>
+	<span style="color:red;">em</span>
+	<p class="parent-em">
+		hello <span> james </span>
+	</p>
+	<hr/>
+	<span style="color:red;">rem</span>
+	<p class="parent-rem">
+		hello <span> james </span>
+	</p>
+</body>
+</html>

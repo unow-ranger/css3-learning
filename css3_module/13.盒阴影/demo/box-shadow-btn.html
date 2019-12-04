@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>盒子阴影-按钮</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		.container {
+			width: 960px;
+			margin: 0 auto;
+			font-size: 20px;
+		}
+		a {
+			display: block;
+			width: 300px;
+			height: 150px;
+			background-color: #abcdef;
+			margin: 50px;
+			line-height: 150px;
+			color: #333;
+			text-align: center;
+			border-radius: 10px;
+			transition: all .6s;
+		}
+		.btn-left:hover {
+			box-shadow: inset 300px 0 rgba(0,0,0,.5);
+
+		}
+		.btn-right:hover {
+			box-shadow: -300px 0 rgba(0,0,0,.5) inset;
+		}
+		.btn-inset:hover {
+			box-shadow:  0 0 0 15px rgba(0,0,0,.5) inset;
+		}
+		.btn-inset-inset:hover {
+			box-shadow: 0 0 0 15px rgba(0,0,0,.8) inset, 0 0 0 150px rgba(0,0,0,.5) inset;
+		}
+		.left-right:hover {
+			box-shadow: inset 100px 0 rgba(0,0,0,.5), inset -100px 0 rgba(0,0,0,.5) ;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<a href="#" class="btn-left">btn-left</a>
+		<a href="#" class="btn-right">btn-right</a>
+		<a href="#" class="btn-inset">btn-inset</a>
+		<a href="#" class="btn-inset-inset">btn-inset-inset</a>
+		<a href="#" class="left-right">left-right</a>
+	</div>
+</body>
+</html>
