@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>linear-gradient</title>
+	<style type="text/css">
+		.container{
+			width:1200px;
+			margin: 0 auto;
+			color:#fff;
+			font-size: 30px;
+			text-align: center;
+
+		}
+		.container>div{
+			margin: 10px;
+			float: left;
+			width: 320px;
+			height: 320px;
+			line-height: 320px;
+		}
+		.angle-gradient-0deg {
+			background: linear-gradient(0deg, green, red);
+		}
+		.angle-gradient-45deg{
+			background: linear-gradient(45deg, green, red);
+		}
+		.angle-gradient-right{
+			background: linear-gradient(to right, green, red);
+		}
+		.angle-gradient-bottom{
+			background: linear-gradient(to bottom, green, red);
+		}
+		.angle-gradient-left{
+			background: linear-gradient(to left, green, red);
+		}
+		.angle-gradient-complex{
+			background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="angle-gradient-0deg">0deg</div>
+		<div class="angle-gradient-45deg">45deg</div>
+		<div class="angle-gradient-right">to right</div>
+		<div class="angle-gradient-bottom">to bottom </div>
+		<div class="angle-gradient-left">to left</div>
+		<div class="angle-gradient-complex">complex</div>
+
+	</div>
+</body>
+</html>
