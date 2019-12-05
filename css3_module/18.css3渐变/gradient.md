@@ -81,7 +81,7 @@
 
 
 
-## 重复径向渐变
+## 重复线性渐变
 
 ### 解释
 
@@ -140,4 +140,48 @@
 ### 效果图
 
 ![1](./assets/1.png)
+
+## 径向渐变
+
+### 解释 
+
+**radial-gradient(shape size at position, start-color, ..., last-color);**
+
+| 值                             | 描述                                                         |
+| ------------------------------ | ------------------------------------------------------------ |
+| *shape*                        | 确定圆的类型:<br />- ellipse (默认): 指定椭圆形的径向渐变。<br />- circle ：指定圆形的径向渐变 |
+| *size*                         | 定义渐变的大小，可能值：<br />- farthest-corner (默认) : 指定径向渐变的半径长度为从圆心到离圆心最远的角<br />- closest-side ：指定径向渐变的半径长度为从圆心到离圆心最近的边<br />- closest-corner ： 指定径向渐变的半径长度为从圆心到离圆心最近的角<br />- farthest-side ：指定径向渐变的半径长度为从圆心到离圆心最远的边 |
+| *position*                     | 定义渐变的位置。可能值：<br />- **center**（默认）：设置中间为径向渐变圆心的纵坐标值。<br />- **top**：设置顶部为径向渐变圆心的纵坐标值。<br />- **bottom**：设置底部为径向渐变圆心的纵坐标值。 |
+| *start-color, ..., last-color* | 用于指定渐变的起止颜色。                                     |
+
+### 代码展示
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>radial-gradient</title>
+	<style type="text/css">
+		.demo{
+			margin: 100px;
+			width: 200px;
+			height: 200px;
+			border-radius: 100%;
+			background-image: radial-gradient(circle at center, #f9c7dc,#5950ec,#04164a);
+		}
+		.demo:hover{
+
+			background-image: radial-gradient(circle at center, #f9c7dc,#e982ad,#ec568c);
+		}
+	</style>
+</head>
+<body>
+	<div class="demo"></div>
+</body>
+</html>
+```
+
+### 效果图
+
+![2](./assets/2.png)
 
