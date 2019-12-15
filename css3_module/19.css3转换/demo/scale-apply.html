@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scale-apply</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+		.pros{
+			width: 922px;
+			height: 300px;
+			/*border: 5px solid #ccc;*/
+			margin: 50px auto;
+		}
+		.pro{
+			float: left;
+			margin:1px;
+			overflow: hidden;
+			position: relative;
+		}
+		.pro>img {
+			border: none;
+			transition: all .8s;
+			height: 300px;
+		}
+		.pro:hover img{
+			transform: scale(1.2);
+		}
+		.pro>.kw{
+			display: block;
+			width: 47px;
+			height: 44px;
+			background-color: rgba(0,0,0,.6);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			text-align: center;
+			line-height: 44px;
+			color: #fff; 
+			font-size: 14px;
+
+		}
+	</style>
+
+</head>
+<body>
+	<div class="pros clearfix">
+		<div class="pro">
+			<img src="./bg-m.png">
+			<span class="kw">时尚</span>
+		</div>
+		<div class="pro">
+			<img src="./bg-m.png">
+			<span class="kw">时尚</span>
+		</div>
+		<div class="pro">
+			<img src="./bg-m.png">
+			<span class="kw">时尚</span>
+		</div>
+		<div class="pro">
+			<img src="./bg-m.png">
+			<span class="kw">时尚</span>
+		</div>
+	</div>
+</body>
+</html>

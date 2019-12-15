@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rotate</title>
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<style type="text/css">
+
+		.container>div{
+			float: left;
+			width:150px;
+			height: 150px;
+			background-color: pink;
+			margin:100px;
+		}
+		.rotate45{
+			transform: rotate(45deg);
+		}
+		.rotate-45{
+			transform: rotate(-45deg);
+		}
+		.orgin-left-top-30{
+			transform-origin: left top;
+			transform: rotate(30deg);
+		}
+		.translate-100-100{
+			position: relative;
+		}
+		.translate-100-100>.origin,.translate-100-100>.move{
+			background-color: pink;
+			position: absolute;
+			width:150px;
+			height: 150px;
+			top: 0;
+			left: 0;
+		}
+		.translate-100-100>.origin{
+			opacity: .7;
+		}
+		.translate-100-100>.move{
+			transition: all 1s;
+			z-index: 2;
+		}
+		.translate-100-100:hover>.move{
+			transform: translate(100px,100px);
+		}
+		.scale-2:hover{
+			transform: scale(2);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="rotate45">rotate45</div>
+		<div class="rotate-45">rotate-45</div>
+		<div class="orgin-left-top-30">orgin-left-top and rotate(30deg)</div>
+		<div class="translate-100-100" style="background-color: transparent;">
+			<div class="origin">origin-position</div>
+			<div class="move">hover:translate-100-100</div>
+
+		</div>
+		<div class="scale-2">hover:scale-2</div>
+	</div>
+</body>
+</html>
